@@ -1,0 +1,124 @@
+/*******reset index******/
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+/*******config principal container*********/
+.footer-container {
+  height: 35%;
+  width: 99%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 30% repeat(3, 1fr) 20%;
+  gap: 20px;
+  background-color: var(--alpha-color);
+  border-radius: 20px;
+  
+}
+/*******config logo*********/
+.logo {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+img {
+  position: relative;
+  height: 30vh;
+  z-index: 2;
+}
+h1 {
+  text-align: center;
+  position: absolute;
+  color: var(--font-color);
+  font-size: 3em;
+  z-index: 1;
+}
+
+/*******config sections and links*********/
+.quienes {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+/*******titles*********/
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(48, 46, 46);
+  font-size: 1.5rem;
+  text-decoration: underline;
+  font-weight: 200;
+}
+/*******nav pags*********/
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+  color: var(--font-color);
+}
+
+/*******social networks*********/
+
+.redesSociales > a > img {
+  height: 50px;
+  width: 50px;
+}
+.redesSociales > a :hover {
+  background-color: var(--font-color);
+  border-radius: 5px;
+}
+
+/*******options config*********/
+span {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+span:hover {
+  color: var(--font-color);
+  text-transform: uppercase;
+}
+
+/*******register secction setings*********/
+
+.formulario > h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.formulario > select {
+  font-size: 0.8rem;
+  width: 160px;
+  height: 2.5rem;
+  padding: 0;
+  border: 0px;
+  margin-bottom: 5px;
+}
+.formulario > .btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/*******config section copyrigth*********/
+.copy {
+  text-align: center;
+}
+
+/*******smartphone screen setings*********/
+
+@media screen and (max-width: 600px) {
+  .footer-container {
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 30px;
+    margin: auto;
+   
+  }
+  
+}

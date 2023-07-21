@@ -1,0 +1,43 @@
+@font-face {
+    font-family: poiret;
+    src: url(/fonts/PoiretOne-aD0x.ttf);
+    
+}
+/*******var asing*********/
+*{
+  --font-color:rgb(244, 123, 143);
+  --withe-color:antiquewhite;
+  --alpha-color:rgba(210, 160, 135, 0.3);
+  --solid-color:rgb(247, 104, 130);
+}
+/*******general config*********/
+html{
+    margin: 0;
+    padding: 0;
+    font-family: poiret;
+    font-size: 16px;
+    font-style: bolder;
+    font-weight: 800;
+    list-style: none;
+}
+/*******btn precreate*********/
+ .btn {
+    background-color: var(--font-color);
+    color: var(--white-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    line-height: 0;
+    font-family: poiret;
+    text-transform: uppercase;
+    width: 80px;
+    transition: all 0.3s;
+  }
+  
+  .btn:hover {
+    background-color:var(--solid-color);
+    color:var(--withe-color)
+  }
